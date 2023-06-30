@@ -1,6 +1,15 @@
 name: Semgrep Scorecard
 
-on: [workflow_dispatch]
+on:
+  pull_request:
+    branches:
+      - master
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * *'
 
 jobs:
   build:
