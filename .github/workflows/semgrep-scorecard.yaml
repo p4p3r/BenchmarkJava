@@ -27,7 +27,7 @@ jobs:
     - name: Run Benchmark
       run: |
         mvn compile
-        ./runBenchmark.sh
+        # ./runBenchmark.sh
     - name: Generate Scorecard
       run: |
         ./scripts/runSemgrep.sh 
